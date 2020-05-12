@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "product-manager-client"
+    }
+  },
+  "defaultProject": "product-manager-client",
+  "cli": {
+    "analytics": "bba6ba3f-94f1-4d3a-96a9-a5d651659daa"
+  }
 }

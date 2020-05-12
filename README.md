@@ -1,27 +1,42 @@
-# ProductManagerClient
+## Spring Boot with Angular
+* Project using Angular as a front-end and Spring boot restful API as a backend.
+* Backend: Project Spring Boot with Java 8 using Docker, Rest, Junit 5, Swagger and Database mysql.
+* Front-end: Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+## Requirements
+You will need to following tools in order to work with this project and code:
+</br>
+* git (http://git-scm.com/)
+* JDK 1.8+ (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* Maven 3.x+ (http://maven.apache.org/)
+* An IDE of your choice.  (Eclipse, IntelliJ, Spring STS, Netbeans, Sublime, etc.)
 
-## Development server
+## Considerations
+IDE used was the eclipse(Java) and Sublime(Angular)
+</br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tests
+Unit testing was used with the resources of JUnit 5, MockMvc, TestRestTemplate.
+</br>
 
-## Code scaffolding
+## Swagger information
+Address for accessing Swagger in the application when it is up: http://localhost:8180/swagger-ui.html
+</br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
+To run this project locally, perform the following steps:
+</br>
+* Use this command to download the project to your machine: git clone https://github.com/emmoro/project-spring-boot-with-angular-client.git
+* To install all of its dependencies and start each app, follow the instructions below:
+* To run the server. Application address: http://localhost:8180/
+```bash
+mvnw spring-boot:run
+```
+* To run the client. Application address: http://localhost:4200/
+```bash
+npm start
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Note
+* This project is the Client in Angular, it´s necessary to do download the part of the Server, at the following address:
+* Front-end in Angular: <a href="https://github.com/emmoro/project-spring-boot-with-angular-server" target="_blank">project-spring-boot-with-angular-server</a>

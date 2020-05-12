@@ -1,0 +1,41 @@
+<mat-table #table [dataSource]="dataSource" 
+  matSort (matSortChange)="ordain($event)">
+
+  <mat-header-row 
+    *matHeaderRowDef="column"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: column;"></mat-row>
+
+  <ng-container matColumnDef="description">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>
+      Description
+    </mat-header-cell>
+    <mat-cell *matCellDef="let product">
+      {{ product.description }}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="details">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>
+      Details
+    </mat-header-cell>
+    <mat-cell *matCellDef="let product">
+      {{ product.details }}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="urlSite">
+    <mat-header-cell *matHeaderCellDef>
+      URL Site
+    </mat-header-cell>
+    <mat-cell *matCellDef="let product">
+       <a href="{{product.urlSite}}" target="_blank">{{product.urlSite}}</a>
+    </mat-cell>
+  </ng-container>
+
+</mat-table>
+
+<mat-paginator 
+  #paginator
+  [pageSize]="10"
+  [pageSizeOptions]="[5, 10, 15, 25]">
+</mat-paginator>
