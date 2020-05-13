@@ -19,10 +19,6 @@ IDE used was the eclipse(Java) and Sublime(Angular)
 Unit testing was used with the resources of JUnit 5, MockMvc, TestRestTemplate.
 </br>
 
-## Swagger information
-Address for accessing Swagger in the application when it is up: http://localhost:8180/swagger-ui.html
-</br>
-
 ## Getting Started
 To run this project locally, perform the following steps:
 </br>
@@ -36,6 +32,9 @@ mvnw spring-boot:run
 ```bash
 npm start
 ```
+## Swagger information
+Address for accessing Swagger in the application when it is up: http://localhost:8180/swagger-ui.html
+</br>
 
 ## Note
 * This project is the Client in Angular, it´s necessary to do download the part of the Server, at the following address:
